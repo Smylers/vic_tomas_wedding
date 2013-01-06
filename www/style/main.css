@@ -1,0 +1,24 @@
+@import url(fonts/Copse.css);
+
+body
+{
+  font-family: Copse;
+  font-size: 120%;
+  margin: 1ex auto 12ex;
+  padding: 0 1em;
+  width: 33em;
+  background-color: #F0F7FF;
+  color: #369;
+}
+
+h1
+{
+  font-weight: normal;
+  margin: 4ex 0 2ex;
+  color: #D36;
+}
+
+a
+{
+  color: #396;
+}
