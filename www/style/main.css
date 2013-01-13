@@ -1,12 +1,12 @@
-@import url(fonts/Copse.css);
+@import url(fonts/Alex_Brush.css);
 
 body
 {
-  font-family: Copse;
-  font-size: 120%;
+  font-family: "Alex Brush";
+  font-size: 160%;
   margin: 1ex auto 12ex;
   padding: 0 1em;
-  width: 33em;
+  width: 25em;
   background-color: #F0F7FF;
   color: #369;
 }
