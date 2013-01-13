@@ -2,19 +2,21 @@
 
 body
 {
-  font-family: "Alex Brush";
-  font-size: 160%;
+  font-family: "Gandhi Serif";
+  font-size: 120%;
   margin: 1ex auto 12ex;
   padding: 0 1em;
-  width: 25em;
+  width: 33em;
   background-color: #F0F7FF;
   color: #369;
 }
 
 h1
 {
+  font-family: "Alex Brush";
+  font-size: 300%;
   font-weight: normal;
-  margin: 4ex 0 2ex;
+  margin: 4ex 0 0.5ex;
   color: #D36;
 }
 
