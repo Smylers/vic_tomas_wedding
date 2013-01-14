@@ -1,5 +1,10 @@
 @import url(fonts/Alex_Brush.css);
 
+html
+{
+  background-color: #0B1326;
+}
+
 body
 {
   font-family: "Gandhi Serif";
@@ -7,7 +12,6 @@ body
   margin: 1ex auto 12ex;
   padding: 0 1em;
   width: 33em;
-  background-color: #F0F7FF;
   color: #369;
 }
 
@@ -23,4 +27,29 @@ h1
 a
 {
   color: #396;
+}
+
+#main
+{
+  background-color: #FEFFD9;
+  padding: 5px;
+}
+
+/* Ugly additional <div>-s to have multiple borders around #main's content: */
+#main_wrap1, #main_wrap2
+{
+  border-color: #0B1326;
+  border-style: solid;
+}
+
+#main_wrap1
+{
+  border-width: 4px;
+  padding: 1px;
+}
+
+#main_wrap2
+{
+  border-width: 1px;
+  padding: 6px;
 }
