@@ -9,6 +9,7 @@ body
 {
   font-family: "Gandhi Serif";
   line-height: 1.4;
+  letter-spacing: -0.02em;
   margin: 1ex auto 12ex;
   padding: 0 1em;
   width: 33em;
@@ -18,6 +19,10 @@ body
 h1
 {
   font-family: "Alex Brush";
+
+  /* Override tighter tracking on Gandhi Serif: */
+  letter-spacing: 0;
+
   font-size: 300%;
   font-weight: normal;
   margin: 4ex 0 0.5ex;
