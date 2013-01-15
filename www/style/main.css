@@ -5,7 +5,7 @@ html
   background-color: #1B2336;
   color: #FEFFCC;
   margin: 0;
-  padding: 2ex 1em 12ex;
+  padding: 0 1em;
 }
 
 body
@@ -13,7 +13,7 @@ body
   font-family: "Gandhi Serif";
   line-height: 1.4;
   letter-spacing: -0.02em;
-  margin: 0 auto;
+  margin: 2ex auto 12ex;
   padding-left: 13em;
   min-width: 28em;
   max-width: 44em;
