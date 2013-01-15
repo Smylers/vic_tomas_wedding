@@ -4,6 +4,8 @@ html
 {
   background-color: #1B2336;
   color: #FEFFCC;
+  margin: 0;
+  padding: 2ex 1em 12ex;
 }
 
 body
@@ -11,9 +13,11 @@ body
   font-family: "Gandhi Serif";
   line-height: 1.4;
   letter-spacing: -0.02em;
-  margin: 1ex auto 12ex;
-  padding: 0 1em;
-  width: 33em;
+  margin: 0 auto;
+  padding-left: 13em;
+  min-width: 28em;
+  max-width: 44em;
+  position: relative;
 }
 
 h1
@@ -26,6 +30,13 @@ h1
   font-size: 300%;
   font-weight: normal;
   margin: 4ex 0 0.5ex;
+}
+
+#nav
+{
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
 
 #main
