@@ -35,15 +35,15 @@ a
 
 #main
 {
-  color: #1B2336;
   background-color: #FEFFCC;
+  color: #001036;
   padding: 5px;
 }
 
 /* Ugly additional <div>-s to have multiple borders around #main's content: */
 #main_wrap1, #main_wrap2
 {
-  border-color: #1B2336;
+  border-color: #001036;
   border-style: solid;
 }
 
