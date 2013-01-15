@@ -3,6 +3,7 @@
 html
 {
   background-color: #1B2336;
+  color: #FEFFCC;
 }
 
 body
@@ -25,7 +26,6 @@ h1
   font-size: 300%;
   font-weight: normal;
   margin: 4ex 0 0.5ex;
-  color: #FEFFCC;
 }
 
 a
