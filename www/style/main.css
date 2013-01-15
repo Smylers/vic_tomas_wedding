@@ -2,7 +2,8 @@
 
 html
 {
-  background-color: #1B2336;
+  background: #1B2336 url(lace.png) repeat-x bottom;
+  min-height: 100%;
   color: #FEFFCC;
   margin: 0;
   padding: 0 1em;
@@ -13,7 +14,7 @@ body
   font-family: "Gandhi Serif";
   line-height: 1.4;
   letter-spacing: -0.02em;
-  margin: 2ex auto 12ex;
+  margin: 2ex auto 80px;
   padding-left: 13em;
   min-width: 28em;
   max-width: 44em;
