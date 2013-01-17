@@ -49,19 +49,19 @@ h1
 }
 
 /* Ugly additional <div>-s to have multiple borders around #main's content: */
-#main_wrap1, #main_wrap2
+#main2, #main3
 {
   border-color: #001036;
   border-style: solid;
 }
 
-#main_wrap1
+#main2
 {
   border-width: 4px;
   padding: 1px;
 }
 
-#main_wrap2
+#main3
 {
   border-width: 1px;
   padding: 6px;
