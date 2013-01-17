@@ -6,15 +6,22 @@ html
   min-height: 100%;
   color: #FEFFCC;
   margin: 0;
-  padding: 0 1em;
+  padding: 0;
 }
 
 body
 {
   background: url(bunting.png) repeat-x top;
+  margin: 0;
+  padding: 0 1em;
+
   font-family: "Gandhi Serif";
   line-height: 1.4;
   letter-spacing: -0.02em;
+}
+
+#body2
+{
   margin: 2ex auto 80px;
   padding-left: 13em;
   min-width: 28em;
