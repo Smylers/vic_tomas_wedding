@@ -1,0 +1,18 @@
+verbose
+colour
+
+src=pages
+recurse
+lib=templates
+dest=www
+
+accept = \.md$
+suffix md=html
+encoding = utf8
+binmode = :utf8
+
+pre_chomp
+
+wrapper = outer.html
+
+copy = \.(png|jpg)$
