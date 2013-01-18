@@ -9,21 +9,21 @@
 <ul id=nav>
 [% page =
 [
-  {url => './', name => 'Home'},
-  {url => 'service.html', name => 'Church Service'},
-  {url => 'reception.html', name => 'Reception'},
-  {url => 'blessing.html', name => 'Blessing'},
-  {url => 'directions.html', name => 'Directions'},
-  {url => 'about_us.html', name => 'About Us'},
-  {url => 'cornwall.html', name => 'About Cornwall'},
-  {url => 'links.html', name => 'Links'},
-  {url => 'gifts.html', name => 'Gift List'},
-  {url => 'prayers.html', name => 'Prayer Requests'},
-  {url => 'photos.html', name => 'Photos'},
+  {file => 'index', url => './', name => 'Home'},
+  {file => 'service', name => 'Church Service'},
+  {file => 'reception', name => 'Reception'},
+  {file => 'blessing', name => 'Blessing'},
+  {file => 'directions', name => 'Directions'},
+  {file => 'about_us', name => 'About Us'},
+  {file => 'cornwall', name => 'About Cornwall'},
+  {file => 'links', name => 'Links'},
+  {file => 'gifts', name => 'Gift List'},
+  {file => 'prayers', name => 'Prayer Requests'},
+  {file => 'photos', name => 'Photos'},
 ]
 %]
-[% FOREACH page %]
-  <li><a href=[% url %]>[% name %]</a>
+[% FOREACH p = page %]
+  <li><a href=[% p.url || "${p.file}.html" %]>[% p.name %]</a>
 [% END %]
 </ul>
 
