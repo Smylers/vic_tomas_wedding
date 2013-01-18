@@ -13,7 +13,7 @@ body
 {
   background: url(bunting.png) repeat-x top;
   margin: 0;
-  padding: 100px 0 0 1em;
+  padding: 100px 0 0;
 
   font-family: "Gandhi Serif";
   line-height: 1.4;
@@ -23,7 +23,7 @@ body
 #body2
 {
   margin: 0 auto 80px;
-  padding-left: 13em;
+  padding-left: 14em;
   padding-right: 1em;
   min-width: 28em;
   max-width: 44em;
@@ -45,7 +45,7 @@ h1
 #nav
 {
   position: absolute;
-  left: 0;
+  left: 1em;
   font-weight: bold;
 }
 
