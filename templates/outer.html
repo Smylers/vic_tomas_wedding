@@ -7,17 +7,24 @@
 <h1>Tomas &amp; Victoria’s Wedding</h1>
 
 <ul id=nav>
-  <li>Home
-  <li>Church Service
-  <li>Reception
-  <li>Blessing
-  <li>Directions
-  <li>About Us
-  <li>About Cornwall
-  <li>Links
-  <li>Gift List
-  <li>Prayer Requests
-  <li>Photos
+[% page =
+[
+  {url => './', name => 'Home'},
+  {url => 'service.html', name => 'Church Service'},
+  {url => 'reception.html', name => 'Reception'},
+  {url => 'blessing.html', name => 'Blessing'},
+  {url => 'directions.html', name => 'Directions'},
+  {url => 'about_us.html', name => 'About Us'},
+  {url => 'cornwall.html', name => 'About Cornwall'},
+  {url => 'links.html', name => 'Links'},
+  {url => 'gifts.html', name => 'Gift List'},
+  {url => 'prayers.html', name => 'Prayer Requests'},
+  {url => 'photos.html', name => 'Photos'},
+]
+%]
+[% FOREACH page %]
+  <li><a href=[% url %]>[% name %]</a>
+[% END %]
 </ul>
 
 <div id=main><div id=main2><div id=main3>
