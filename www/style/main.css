@@ -30,16 +30,26 @@ body
   position: relative;
 }
 
-h1
+h1, h2
 {
   font-family: "Alex Brush";
 
   /* Override tighter tracking on Gandhi Serif: */
   letter-spacing: 0;
 
-  font-size: 300%;
   font-weight: normal;
+}
+
+h1
+{
+  font-size: 300%;
   margin: 0 0 0.5ex;
+}
+
+h2
+{
+  margin: 0;
+  font-size: 220%;
 }
 
 #nav
