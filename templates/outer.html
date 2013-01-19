@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
-<title>Tomas &amp; Victoria’s Wedding</title>
+<title>[% IF title %][% title %] — [% END ~%]
+  Tomas &amp; Victoria’s Wedding</title>
 <link rel=stylesheet href=style/main.css>
 
 <div id=body2>
@@ -36,5 +37,7 @@
 
 [% USE Markdown %]
 [% content | markdown %]
+{[% template.name %]}
+[[% title %]]
 </div></div></div>
 </div>
