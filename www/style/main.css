@@ -11,9 +11,9 @@ html
 
 body
 {
-  background: url(bunting.png) repeat-x top;
+  background: url(little_bunting.png) repeat-x;
   margin: 0;
-  padding: 100px 0 0;
+  padding: 70px 0 0;
 
   font-family: "Gandhi Serif";
   line-height: 1.4;
