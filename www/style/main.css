@@ -69,6 +69,13 @@ h2
   text-decoration: none;
 }
 
+#nav a:hover
+{
+  color: #FF7;
+  text-shadow: 0 0 0.5ex #FF7;
+}
+
+
 #nav strong
 {
   color: #FFF;
