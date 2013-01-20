@@ -1,2 +1,3 @@
-Tomas and Victoria haven’t put their wedding website live yet. It will
-appear here soon.
+[% SET heading = 'Tomas and Victoria are getting married!!' %]
+
+<strong>May 27th 2013</strong>
