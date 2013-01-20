@@ -5,7 +5,8 @@
 <link rel=stylesheet href=style/main.css>
 
 <div id=body2>
-<h1>Tomas &amp; Victoria’s Wedding</h1>
+<h1>[% IF heading %][% heading %]
+  [% ELSE %]Tomas &amp; Victoria’s Wedding[% END %]</h1>
 
 <ul id=nav>
 [% page =
@@ -34,7 +35,7 @@
 </ul>
 
 <div id=main><div id=main2><div id=main3>
-  <h2>[% heading || title %]</h2>
+[%+ UNLESS heading %]<h2>[% title %]</h2>[% END %]
 
 [% USE Markdown %]
 [% content | markdown %]
