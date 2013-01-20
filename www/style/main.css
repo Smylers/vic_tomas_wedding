@@ -30,7 +30,7 @@ body
   position: relative;
 }
 
-h1, h2
+h1, h2, #home #main strong
 {
   font-family: "Alex Brush";
 
@@ -107,4 +107,33 @@ h2
 {
   border-width: 1px;
   padding: 6px;
+}
+
+#home
+{
+  background: url(big_bunting.png) repeat-x 0 5px;
+  padding-top: 115px;
+}
+
+#home h1
+{
+  font-size: 400%;
+}
+
+#home #main
+{
+  background-color: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+#home #main2, #home #main3
+{
+  border-style: none;
+  padding: 0;
+}
+
+#home #main strong
+{
+  font-size: 170%;
 }
