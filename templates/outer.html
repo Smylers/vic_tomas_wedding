@@ -4,6 +4,7 @@
   Tomas &amp; Victoria’s Wedding</title>
 <link rel=stylesheet href=style/main.css>
 
+[% IF id %]<body id=[% id %]>[% END %]
 <div id=body2>
 <h1>[% IF heading %][% heading %]
   [% ELSE %]Tomas &amp; Victoria’s Wedding[% END %]</h1>
@@ -41,3 +42,4 @@
 [% content | markdown %]
 </div></div></div>
 </div>
+[% IF id %]</html>[% END %]
