@@ -30,7 +30,7 @@ body
   position: relative;
 }
 
-h1, h2, #home #main strong
+h1, h2, h3, #home #main strong
 {
   font-family: "Alex Brush";
 
@@ -51,7 +51,13 @@ h1
 h2
 {
   margin: 0;
-  font-size: 220%;
+  font-size: 240%;
+}
+
+h3
+{
+  font-size: 190%;
+  margin: 0;
 }
 
 #nav
