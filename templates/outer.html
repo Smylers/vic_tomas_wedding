@@ -27,9 +27,9 @@
 %]
 [% FOREACH p = page %]
   <li>
-  [% IF template.name == "${p.file}.md" %]
+  [% IF template.name == "${p.file}.md" ~%]
     <strong>[% p.name %]</strong>
-  [% ELSE %]
+  [% ELSE ~%]
     <a href=[% p.url || "${p.file}.html" %]>[% p.name %]</a>
   [% END %]
 [% END %]
