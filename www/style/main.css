@@ -95,7 +95,7 @@ h3
 {
   background-color: #FEFFCC;
   color: #001036;
-  padding: 5px;
+  padding: 0.3em;
 }
 
 /* Ugly additional <div>-s to have multiple borders around #main's content: */
@@ -107,14 +107,14 @@ h3
 
 #main2
 {
-  border-width: 4px;
-  padding: 1px;
+  border-width: 0.25em;
+  padding: 0.1em;
 }
 
 #main3
 {
-  border-width: 1px;
-  padding: 16px 10px;
+  border-width: 0.1em;
+  padding: 1.8ex 0.6em;
 }
 
 p
