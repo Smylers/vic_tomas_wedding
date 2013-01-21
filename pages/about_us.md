@@ -7,6 +7,8 @@ ABOUT US
 
 ### Vic on Tomas... ###
 
+<img width=240 height=240 alt="[Baby photo of Tomas]"
+src=images/baby_Tomas.jpg>
 Tall, Dark and Handsome, Tomas is Cornish to the core but you won’t be able to
 tell from his accent unless he is doing an impression of his mother! He was
 previously a ballet dancer and an accountant but he got bored. Now he works for
@@ -33,6 +35,7 @@ see what God has in store for the next chapter of our life together.
 
 ### Tomas on Vic... ###
 
+<img width=240 height=285 alt="[Baby photo of Vic]" src=images/baby_Vic.jpg>
 Miss Victoria Nicholson (unofficially Victoria Gertrude Nicholson) is from a
 land far far away.  I have always had a penchant for a foreign girl and it
 seems dreams do come true – alas I digress.  Victoria comes from the shires,
