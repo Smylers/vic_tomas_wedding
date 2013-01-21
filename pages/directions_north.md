@@ -1,8 +1,8 @@
-[% SET title = 'Directions' %]
+[% SET title = 'Directions from the North' %]
 
-### From England and North Cornwall ###
+### To Church ###
 
-Directions to Kea Church from Carland Cross (A30).
+To Kea Church from Carland Cross (A30):
 
 <table>
   <tr>
