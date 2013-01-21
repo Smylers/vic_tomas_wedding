@@ -5,6 +5,17 @@ html
   color: #001036;
 }
 
+body
+{
+  background-image: none;
+  padding-top: 0;
+}
+
+#body2
+{
+  margin-bottom: 0;
+}
+
 #nav
 {
   display: none;
@@ -13,6 +24,12 @@ html
 #body2
 {
   padding: 0;
+}
+
+h1
+{
+  background: url(little_bunting.png) repeat-x;
+  padding-top: 85px;
 }
 
 #main
