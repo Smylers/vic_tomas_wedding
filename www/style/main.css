@@ -127,6 +127,16 @@ p + p, p + table
   margin-top: 1.5ex;
 }
 
+th
+{
+  text-align: left;
+}
+
+td
+{
+  vertical-align: top;
+}
+
 img
 {
   float: right;
