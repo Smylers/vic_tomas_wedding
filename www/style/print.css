@@ -1,0 +1,21 @@
+html
+{
+  background-color: inherit;
+  background-image: none;
+  color: #001036;
+}
+
+#nav
+{
+  display: none;
+}
+
+#body2
+{
+  padding: 0;
+}
+
+#main
+{
+  background-color: inherit;
+}
