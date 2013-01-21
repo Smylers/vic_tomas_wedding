@@ -60,6 +60,11 @@ h3
   margin: 1.7ex 0 0.7ex;
 }
 
+.subtitle
+{
+  white-space: nowrap;
+}
+
 #nav
 {
   position: absolute;
