@@ -159,6 +159,16 @@ img.full
   padding: 0;
 }
 
+a
+{
+  color: #1F4399;
+}
+
+a:visited
+{
+  color: #BE2632;
+}
+
 #home
 {
   background: url(big_bunting.png) repeat-x 0 5px;
