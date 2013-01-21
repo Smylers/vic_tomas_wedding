@@ -1,9 +1,9 @@
 [% SET title = 'About Us' %]
 
-REGRETABLY, DUE TO OUR BUSY LIVES, WE HAVE NOT YET BEEN ABLE TO MEET ALL OF THE
-MANY IMPORTANT PEOPLE IN EACH OTHERS LIVES. WE ARE EXCITED TO DO THIS AT THE
-WEDDING, BUT FOR THOSE OF YOU STILL ASKING QUESTIONS, HERE IS A LITTLE MORE
-ABOUT US
+<b class=lede>Regretably, due to our busy lives, we have not yet been able to
+meet all of the many important people in each others lives. We are excited to
+do this at the wedding, but for those of you still asking questions, here is a
+little more about us</b>
 
 ### Vic on Tomas... ###
 
