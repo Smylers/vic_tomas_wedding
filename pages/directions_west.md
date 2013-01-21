@@ -54,3 +54,5 @@ To Kea Church from Chiverton Cross (A30):
     Continue down the steep hill, over the ford, and ascend the hill until you
     find Kea Church on the left and the church car park on the right.
 </table>
+
+[% INCLUDE directions_reception.md %]
