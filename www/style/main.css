@@ -127,6 +127,18 @@ p + p
   margin-top: 1.5ex;
 }
 
+img
+{
+  float: right;
+  padding: 0 0 1ex 1em;
+}
+
+img.full
+{
+  float: inherit;
+  padding: 0;
+}
+
 #home
 {
   background: url(big_bunting.png) repeat-x 0 5px;
