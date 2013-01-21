@@ -174,7 +174,7 @@ a
   color: #1F4399;
 }
 
-a:visited
+a:visited, .red
 {
   color: #BE2632;
 }
