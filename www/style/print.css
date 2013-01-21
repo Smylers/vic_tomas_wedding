@@ -36,3 +36,8 @@ h1
 {
   background-color: inherit;
 }
+
+.section
+{
+  page-break-inside: avoid;
+}

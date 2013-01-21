@@ -48,9 +48,10 @@ To Kea Church from Carland Cross (A30):
       you find Kea Church on the left and the church car park on the right.
 </table>
 
-### To the Reception ###
+<div class=section>
+<h3>To the Reception</h3>
 
-From Kea Church to Chacewater Village Hall:
+<p>From Kea Church to Chacewater Village Hall:</p>
 
 <table>
   <tr>
@@ -122,3 +123,4 @@ From Kea Church to Chacewater Village Hall:
     <td>Bear left into the car park.  Chacewater Village Hall can be located
       just above the car park.
 </table>
+</div>
