@@ -48,6 +48,12 @@ h1
   margin: 0 0 1ex;
 }
 
+h1 a
+{
+  color: inherit;
+  text-decoration: inherit;
+}
+
 h2
 {
   margin: 0 0 0.7ex;
@@ -173,12 +179,12 @@ img.full
   padding: 0;
 }
 
-a
+#main a
 {
   color: #1F4399;
 }
 
-a:visited, .red
+#main a:visited, .red
 {
   color: #BE2632;
 }
