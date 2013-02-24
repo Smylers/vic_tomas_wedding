@@ -151,20 +151,17 @@ table
 th, td
 {
   vertical-align: top;
-  padding-right: 0.7em;
-  padding-left: 0;
-  padding-bottom: 0;
+  padding: 1ex 0.7em 0 0;
+}
+
+tr:first-child > th, tr:first-child > td
+{
+  padding-top: 0;
 }
 
 th
 {
   text-align: left;
-  padding-top: 0;
-}
-
-td
-{
-  padding-top: 1ex;
 }
 
 img
