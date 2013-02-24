@@ -150,6 +150,7 @@ table
 
 th, td
 {
+  vertical-align: top;
   padding-right: 0.7em;
   padding-left: 0;
   padding-bottom: 0;
@@ -164,7 +165,6 @@ th
 td
 {
   padding-top: 1ex;
-  vertical-align: top;
 }
 
 img
