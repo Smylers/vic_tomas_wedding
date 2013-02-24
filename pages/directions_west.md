@@ -12,34 +12,34 @@ To Kea Church from Chiverton Cross (A30):
   <tr>
     <td>A390
     <td>0.01
-    <td>At Chiverton Cross roundabout take the 4th exit onto the A390 
+    <td>At Chiverton Cross roundabout take the 4th exit onto the A390
       <br>Signposted Truro
   <tr>
     <td>
     <td>2.21
-    <td>At [Threemilestone] roundabout take the 2nd exit onto the A390 
+    <td>At [Threemilestone] roundabout take the 2nd exit onto the A390
       <br>Signposted Truro, Falmouth
   <tr>
     <td>
     <td>2.94
     <td>At Maiden Green [Truro College] roundabout take the 2nd exit onto the
-      A390 
+      A390
       <br>Signposted Truro, Falmouth
   <tr>
     <td>
     <td>3.33
     <td>At Treliske [Royal Cornwall Hospital] roundabout take the 3rd exit onto
-      the A390 
+      the A390
       <br>Signposted Truro, Falmouth
   <tr>
     <td>
     <td>3.75
-    <td>At mini-roundabout take the 1st exit onto the A390 
+    <td>At mini-roundabout take the 1st exit onto the A390
       <br>Signposted Truro
   <tr>
     <td>
     <td>4.49
-    <td>At [Sainsburys] roundabout take the 3rd exit onto the A390 
+    <td>At [Sainsburys] roundabout take the 3rd exit onto the A390
       <br>Signposted St Austell, Falmouth
   <tr>
     <td>A39
