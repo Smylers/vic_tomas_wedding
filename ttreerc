@@ -16,3 +16,6 @@ pre_chomp
 wrapper = outer.html
 
 copy = \.(png|jpg)$
+
+depend directions_north.md=directions_reception.md
+depend directions_west.md=directions_reception.md
