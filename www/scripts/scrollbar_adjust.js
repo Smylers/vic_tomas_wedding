@@ -17,5 +17,5 @@
 
 $(document).ready(function()
 {
-  $('body').css({paddingRight: '-=' + (window.innerWidth - $('html').width())})
+  $('body').css({paddingRight: '-=' + (window.innerWidth - $(window).width())})
 });
