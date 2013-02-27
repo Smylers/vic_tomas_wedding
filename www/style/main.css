@@ -21,7 +21,6 @@ body
 
   font-family: "Gandhi Serif";
   line-height: 1.4;
-  letter-spacing: -0.02em;
 }
 
 #body2
@@ -36,9 +35,6 @@ body
 h1, h2, h3, #home #main strong
 {
   font-family: "Alex Brush";
-
-  /* Override tighter tracking on Gandhi Serif: */
-  letter-spacing: 0;
 
   font-weight: normal;
 
