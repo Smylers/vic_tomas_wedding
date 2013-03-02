@@ -196,10 +196,12 @@ img.full
   padding-top: 125px;
 }
 
+/*
 #home h1
 {
   font-size: 400%;
 }
+*/
 
 #home #main
 {
@@ -219,7 +221,9 @@ img.full
   font-size: 220%;
 }
 
+/*
 #home #nav
 {
   top: 16.9ex;
 }
+*/
