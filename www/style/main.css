@@ -75,14 +75,19 @@ h3
   white-space: nowrap;
 }
 
-#nav
+#header
 {
   position: fixed;
   width: 9em;
+  margin: 0 0 0 -10em;
+}
+
+#nav
+{
   font-weight: bold;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 0 -10em;
+  margin: 0;
 }
 
 #nav a
@@ -92,7 +97,7 @@ h3
   text-decoration: none;
 }
 
-#nav a:hover
+#header a:hover
 {
   color: #FF7;
   text-shadow: 0 0 0.5ex #FF7;
