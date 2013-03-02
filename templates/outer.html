@@ -12,7 +12,7 @@
 <h1>[% IF heading %][% heading %]
   [% ELSE %]<a href=/>Tomas &amp; Victoria’s Wedding[% END %]</a></h1>
 
-<ul id=nav>
+  <ul id=nav>
 [% page =
 [
   {file => 'index', url => './', name => 'Home'},
@@ -30,14 +30,14 @@
 ]
 %]
 [% FOREACH p = page %]
-  <li>
+    <li>
   [% IF template.name == "${p.file}.md" ~%]
-    <strong>[% p.name %]</strong>
+      <strong>[% p.name %]</strong>
   [% ELSE ~%]
-    <a href=[% p.url || "${p.file}.html" %]>[% p.name %]</a>
+      <a href=[% p.url || "${p.file}.html" %]>[% p.name %]</a>
   [% END %]
 [% END %]
-</ul>
+  </ul>
 
 <div id=main><div id=main2><div id=main3>
 [%+ UNLESS heading %]<h2>[% title %]</h2>[% END %]
