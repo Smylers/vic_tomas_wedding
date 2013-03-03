@@ -9,13 +9,31 @@
 // starting the content slightly to the left of where it is on pages that don't
 // scroll. This makes it jump when switching between pages.
 //
-// Avoid this by having some right padding on all pages, to make room for the
-// scroll bar (which is done in CSS), then reducing that by the width of the
-// scrollbar on pages that have one, thereby restoring the amount of surplus
-// space (to be divided between the two sides) to what it would've been without
-// the scroll bar.
+// Avoid this by adding extra padding to the right the same width as a
+// scrollbar on pages that don't have one.
 
 $(document).ready(function()
 {
-  $('body').css({paddingRight: '-=' + (window.innerWidth - $(window).width())})
+
+  // A scrollbar reduces .width() but not innerWidth, so if these two are the
+  // same then there isn't a scrollbar on this page:
+  if (window.innerWidth - $(window).width() == 0)
+  {
+
+    // We want to add right padding the same width as a scrollbar. That first
+    // involves measuring how wide a scrollbar is. Big bottom padding will
+    // force a scroll bar to appear:
+    $('html').css({paddingBottom: '100%'});
+
+    // The reduction in .width() now reflects that scrollbar:
+    var scrollbar_width = window.innerWidth - $(window).width();
+
+    // Remove that padding, since it isn't actually desired. The scrollbar will
+    // disappear again:
+    $('html').css({paddingBottom: 0});
+
+    // Add padding in its place:
+    $('body').css({paddingRight: '+=' + scrollbar_width});
+
+  }
 });
