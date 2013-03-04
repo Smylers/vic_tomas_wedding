@@ -1,4 +1,4 @@
-[% SET heading = 'Tomas and Victoria are getting&nbsp;married!!' %]
+[% SET title = 'Tomas and Victoria are getting&nbsp;married!!' %]
 [% SET id = 'home' %]
 
 <strong>May 27th 2013</strong>

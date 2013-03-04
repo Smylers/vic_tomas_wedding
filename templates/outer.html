@@ -9,8 +9,8 @@
 
 [% IF id %]<body id=[% id %]>[% END %]
 <div id=body2>
-<h1>[% IF heading %][% heading %]
-  [% ELSE %]<a href=/>Tomas &amp; Victoria’s Wedding[% END %]</a></h1>
+<div id=header>
+  <h1><a href=/>Tomas &amp; Victoria’s Wedding</a></h1>
 
   <ul id=nav>
 [% page =
@@ -38,6 +38,7 @@
   [% END %]
 [% END %]
   </ul>
+</div>
 
 <div id=main><div id=main2><div id=main3>
 [%+ UNLESS heading %]<h2>[% title %]</h2>[% END %]
