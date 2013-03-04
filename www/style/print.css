@@ -16,6 +16,13 @@ body
   margin-bottom: 0;
 }
 
+#header
+{
+  position: inherit;
+  width: inherit;
+  margin: inherit;
+}
+
 #nav
 {
   display: none;
@@ -28,8 +35,18 @@ body
 
 h1
 {
+  font-size: 300%;
   background: url(little_bunting.png) repeat-x;
-  padding-top: 85px;
+  padding-top: 65px;
+  line-height: inherit;
+  text-shadow: inherit;
+  position: inherit;
+  margin: 0;
+}
+
+h1:before
+{
+  content: inherit;
 }
 
 #main
