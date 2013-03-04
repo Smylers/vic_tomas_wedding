@@ -1,4 +1,4 @@
-[% SET title = 'We <span class=red>♥</span> Cornwall' %]
+[% SET title = 'We <span class=heart>♥</span> Cornwall' %]
 [% SET plain_title = 'We ♥ Cornwall' %]
 
 For those of you trekking across the border for a little holiday whilst
