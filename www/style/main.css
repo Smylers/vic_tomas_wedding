@@ -1,5 +1,6 @@
 @import url(fonts/Alex_Brush.css);
 @import url(fonts/Gandhi_Serif.css);
+@import url(fonts/DejaVu_Serif_hearts.css);
 
 html
 {
@@ -52,10 +53,15 @@ h1
   position: relative;
 }
 
+h1:before, #nav li > :before, .heart
+{
+  font-family: "DejaVu Serif hearts";
+  font-weight: normal;
+}
+
 h1:before
 {
   content: '♡';
-  font-weight: bold;
   color: #D00;
   position: absolute;
   width: 100%;
