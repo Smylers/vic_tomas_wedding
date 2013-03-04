@@ -217,15 +217,18 @@ img.full
 #home
 {
   background: url(big_bunting.png) repeat-x 0 5px;
-  padding-top: 125px;
 }
 
-/*
 #home h1
 {
+  visibility: hidden;
+}
+
+#home h2
+{
+  padding-top: 40px;
   font-size: 400%;
 }
-*/
 
 #home #main
 {
@@ -244,10 +247,3 @@ img.full
 {
   font-size: 220%;
 }
-
-/*
-#home #nav
-{
-  top: 16.9ex;
-}
-*/
