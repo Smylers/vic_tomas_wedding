@@ -42,7 +42,7 @@ h1, h2, h3, #home #main strong
 h1
 {
   font-size: 250%;
-  margin: 0 0 0.5ex;
+  margin: 0 0 1ex;
   padding: 0ex 0;
   line-height: 0.9;
   text-align: center;
