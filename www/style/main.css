@@ -57,6 +57,7 @@ h1:before, #nav li > :before, .heart
 {
   font-family: "DejaVu Serif hearts";
   font-weight: normal;
+  line-height: 1;
 }
 
 h1:before
@@ -68,6 +69,7 @@ h1:before
   font-size: 390%;
   text-shadow: none;
   z-index: -10;
+  top: -0.45ex;
 }
 
 h1 a
