@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
-<title>[% IF title %][% plain_title || title %] — [% END ~%]
+<title>[% UNLESS id == 'home' %][% plain_title || title %] — [% END ~%]
   Tomas &amp; Victoria’s Wedding</title>
 <link rel=stylesheet href=style/main.css>
 <script src=scripts/jquery_1.9.1.min.js></script>
