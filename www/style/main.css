@@ -49,7 +49,6 @@ h1
   text-shadow:
     -1px -1px 0 #1B2336,
     1px 1px 0 #1B2336;
-  position: relative;
 }
 
 h1:before, #nav li > :before, .heart
