@@ -251,6 +251,21 @@ img.full
   padding: 0;
 }
 
+#home #main a
+{
+  color: #91CFE6;
+}
+
+#home #main a:visited
+{
+  color: #E62A3D;
+}
+
+#home #main a:hover
+{
+  color: #A1E6FF;
+}
+
 #home #main strong
 {
   font-size: 220%;
