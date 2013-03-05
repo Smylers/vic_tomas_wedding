@@ -222,6 +222,11 @@ img.full
   color: #BE2632;
 }
 
+#main a:hover
+{
+  color: #FF3343;
+}
+
 #home
 {
   background: url(big_bunting.png) repeat-x 0 5px;
