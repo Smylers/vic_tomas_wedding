@@ -2,25 +2,43 @@
 @import url(fonts/Gandhi_Serif.css);
 @import url(fonts/DejaVu_Serif_hearts.css);
 
+/* We want two border images on pages: the bunting at the top and the lace at
+** the bottom. Since browsers don't yet have good enough support for border
+** images, have them be background images. These require two separate elements,
+** which have to be <html> and <body>, since no other elements can go outside
+** them: */
 html
 {
+
+  /* Dark blue background; image fixed at the left (rather than horizontally
+  ** centred) so that it doesn't differ by the appearance of a scroll bar,
+  ** which makes the content area slightly narrower: */
   background: #1B2336 url(lace.png) repeat-x left bottom;
+
+  /* Ensure the lace is at the bottom of the window, even on pages with short
+  ** content that wouldn't otherwise reach that far: */
   min-height: 100%;
+
+  /* Cream: */
   color: #FEFFCC;
+
   margin: 0;
   padding: 0;
 }
 
+/* Pale blue: */
 a
 {
   color: #91CFE6;
 }
 
+/* Pinky red: */
 a:visited
 {
   color: #E62A3D;
 }
 
+/* Bright pale blue: */
 a:hover
 {
   color: #A1E6FF;
@@ -29,6 +47,8 @@ a:hover
 body
 {
   background: url(little_bunting.png) repeat-x 0 5px;
+
+  /* Content starts under the bunting: */
   padding: 85px 0 0;
   margin: 0;
 
@@ -36,47 +56,92 @@ body
   line-height: 1.4;
 }
 
+/* Since <body> is doing duty as a second <html>, wrap all page content in
+** another element which can do what <body> normally would: */
 #body2
 {
+
+  /* Let the width be stretchy within browser windows, but prevent it from
+  ** getting too wide or too narrow to be comfortably readable: */
   min-width: 28em;
   max-width: 44em;
+
+  /* In wide windows centre the content; ensure it doesn't overlap with the
+  ** lace: */
   margin: 0 auto 80px;
+
+  /* Space for the menu: */
   padding-left: 11em;
+
+  /* In narrow windows where there isn't any margin, avoid content being right
+  ** up against the edge of the window: */
   padding-right: 1em;
 }
 
+/* Script font for headings, and everything on the home page: */
 h1, h2, h3, #home #main
 {
   font-family: "Alex Brush";
 
+  /* It has wide leading anyway:  */
   line-height: 1;
+
+  /* Headings are bold by default, but we don't want that with this font:  */
   font-weight: normal;
 }
 
 
+/*
+** Left Column
+*/
+
+/* The header wraps the site title and the menu. Put them down the side, in the
+** space left by #body2: */
 #header
 {
+
+  /* Keep visible when scrolling: */
   position: fixed;
+
+  /* Fit inside #body2's padding-left, with 1em either side: */
   width: 9em;
   margin: 0 0 0 -10em;
 }
 
+/* Site heading: */
 h1
 {
   font-size: 250%;
+
+  /* Gap between header and menu: */
   margin: 0 0 1ex;
   padding: 0;
+
+  /* Keep the lines close together, forming a kind-of logo: */
   line-height: 0.9;
   text-align: center;
+
+  /* There's a heart behind the header (implemented with :before). Where the
+  ** text overlaps the heart shape, have a 1px gap separating them, so it's
+  ** easier to read. Do this by having a 'shadow' 1px left and below, and
+  ** another 1px right and above, both in the page background colour, thereby
+  ** forming an outline all the way round it: */
   text-shadow:
     -1px -1px 0 #1B2336,
     1px 1px 0 #1B2336;
 }
 
+/* Elements containing hearts. Neither of the two typefaces being used for text
+** on the site include the heart glyphs, so provide one that does, thereby
+** ensuring a consistent look across platforms: */
 h1:before, #nav li > :before, .heart
 {
   font-family: "DejaVu Serif hearts";
+
+  /* If used in a bold element, don't try to make the heart bolder: */
   font-weight: normal;
+
+  /* Don't let the heart affect the line spacing: */
   line-height: 1;
 }
 
@@ -85,25 +150,43 @@ h1:before
   content: '♡';
   color: #D00;
   font-size: 390%;
+
+  /* Under the <h1>: */
   position: absolute;
   z-index: -10;
+
+  /* Don't inherit <h1>'s outline: */
   text-shadow: none;
+
+  /* Center */
   width: 100%;
+
+  /* Start farther up the page, so the top of the heart just pokes out above
+  ** the text: */
   top: -0.45ex;
 }
 
+/* The links in the header (#nav and <h1>) are obviously links, so don't need
+** distinguishing with colour or underlining; use the cream for everything on
+** the dark blue: */
 #header a
 {
   color: inherit;
   text-decoration: inherit;
 }
 
+/* Yellow (more intense cream): */
 #header a:hover
 {
   color: #FF7;
+
+  /* Halo highlight, by having a shadow that's exactly behind the text, but
+  ** fuzzy: */
   text-shadow: 0 0 0.5ex #FF7;
 }
 
+/* The current page in the menu, highlighted in white, and with the same halo
+** as hovered links: */
 #nav strong
 {
   color: #FFF;
@@ -115,9 +198,13 @@ h1:before
   font-weight: bold;
   padding: 0;
   margin: 0;
+
+  /* Disable the default bullets, to use hearts instead: */
   list-style-type: none;
 }
 
+/* Each item in the menu contains either an <a> link, or <strong> for the
+** current page. Either way, put a heart before it: */
 #nav li > :before
 {
   content: '♥';
@@ -125,11 +212,19 @@ h1:before
   padding-right: 0.3em;
 }
 
+/* Have the full width of menu items be clickable, not just the text: */
 #nav a
 {
   display: block;
 }
 
+
+
+/*
+** Main Column
+*/
+
+/* Main content is a cream box with dark blue text: */
 #main
 {
   background-color: #FEFFCC;
@@ -137,22 +232,28 @@ h1:before
   padding: 0.3em;
 }
 
+/* Powder blue: */
 #main a
 {
   color: #1F4399;
 }
 
+/* Red; <span class=heart> is wrapped round ♥ symbols, so they can be red as
+** well: */
 #main a:visited, .heart
 {
   color: #BE2632;
 }
 
+/* Bright red: */
 #main a:hover
 {
   color: #FF3343;
 }
 
-/* Ugly additional <div>-s to have multiple borders around #main's content: */
+/* We want a triple border around the cream box. Without border-image this
+** requires three boxes, so have two more otherwise-unnecessary <div>-s inside
+** #main: */
 #main2, #main3
 {
   border-color: #001036;
@@ -171,33 +272,45 @@ h1:before
   padding: 1.8ex 0.6em;
 }
 
+/* Page heading: */
 h2
 {
   font-size: 240%;
+
+  /* Doesn't need gap above, because it's at the top of the cream box, and the
+  ** inner padding takes care of that: */
   margin: 0 0 0.7ex;
 }
 
+/* Subheadings: */
 h3
 {
   font-size: 190%;
   margin: 1.7ex 0 0.7ex;
 }
 
+/* If a heading contains a subtitle, wrap it in <span class=subtitle>, then if
+** it doesn't fit all on one line ensure the line-break is between the main
+** title and subtitle: */
 .subtitle
 {
   white-space: nowrap;
 }
 
+/* Don't need any space around the first paragraph; the preceding heading will
+** have suitable margin-bottom: */
 p
 {
   margin: 0;
 }
 
+/* A subsequent paragraph needs a gap above it: */
 p + p
 {
   margin-top: 1.5ex;
 }
 
+/* As does a table, but not as much because all the cells have padding-top: */
 p + table
 {
   margin-top: 0.5ex;
@@ -206,44 +319,81 @@ p + table
 .lede
 {
   text-transform: uppercase;
+
+  /* Undo default bold of <b> element used for this: */
   font-weight: normal;
 }
 
+
+/*
+** Tables
+*/
+
+/* Avoid gaps between cells: */
 table
 {
   border-collapse: collapse;
 }
 
+/* Space above cells to separate rows, and to the right of cells to separate
+** columns. No space to the left, so the first column's content lines up with
+** the rest of the text: */
 th, td
 {
   padding: 1ex 0.7em 0 0;
+
+  /* Override default vertical centring: */
   vertical-align: top;
 }
 
+/* Override default horizontal centring: */
 th
 {
   text-align: left;
 }
 
+
+/*
+** Images
+*/
+
+/* By default put images over at the right and have text wrap around them: */
 img
 {
   float: right;
+
+  /* Space to the left and bottom, so the text isn't right up against the
+  ** image. None above or to the right, so the image lines up with the top of
+  ** the paragraph and the right edge of the text: */
   padding: 0 0 1ex 1em;
 }
 
+/* An image that's to be full width, and the only content of a paragraph, is
+** denoted class=full: */
 img.full
 {
+
+  /* Undo the above settings: */
   float: inherit;
   padding: 0;
 }
 
 
+/*
+** Home Page
+*/
 
+/* Don't display the site heading on the homepage, because it's unnecessary
+** (it's obvious what the site is from the other text on it, and we don't need
+** a link to the homepage) and to keep the homepage minimal and uncluttered.
+** Make it invisible rather than not there at all so there's an empty space of
+** the same size and the menu is in the same place as on other pages:  */
 #home h1
 {
   visibility: hidden;
 }
 
+/* Without the site heading we can fit bigger bunting in: */
 #home
 {
   background: url(big_bunting.png) repeat-x 0 5px;
@@ -251,10 +401,15 @@ img.full
 
 #home h2
 {
+
+  /* Allow for the bigger bunting: */
   padding-top: 40px;
+
+  /* Big headline: */
   font-size: 400%;
 }
 
+/* Don't have the cream box; disable all the settings for it: */
 #home #main
 {
   background-color: inherit;
@@ -268,6 +423,8 @@ img.full
   padding: 0;
 }
 
+/* Everything on the home page is in the script font, so make important things
+** be bigger rather than bold: */
 #home #main strong
 {
   font-size: 220%;
