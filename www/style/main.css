@@ -38,20 +38,27 @@ body
 
 #body2
 {
+  min-width: 28em;
+  max-width: 44em;
   margin: 0 auto 80px;
   padding-left: 11em;
   padding-right: 1em;
-  min-width: 28em;
-  max-width: 44em;
 }
 
 h1, h2, h3, #home #main
 {
   font-family: "Alex Brush";
 
-  font-weight: normal;
-
   line-height: 1;
+  font-weight: normal;
+}
+
+
+#header
+{
+  position: fixed;
+  width: 9em;
+  margin: 0 0 0 -10em;
 }
 
 h1
@@ -77,11 +84,11 @@ h1:before
 {
   content: '♡';
   color: #D00;
-  position: absolute;
-  width: 100%;
   font-size: 390%;
-  text-shadow: none;
+  position: absolute;
   z-index: -10;
+  text-shadow: none;
+  width: 100%;
   top: -0.45ex;
 }
 
@@ -103,43 +110,19 @@ h1:before
   text-shadow: 0 0 0.5ex #FFF;
 }
 
+#nav
+{
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 #nav li > :before
 {
   content: '♥';
   color: #D00;
   padding-right: 0.3em;
-}
-
-h2
-{
-  margin: 0 0 0.7ex;
-  font-size: 240%;
-}
-
-h3
-{
-  font-size: 190%;
-  margin: 1.7ex 0 0.7ex;
-}
-
-.subtitle
-{
-  white-space: nowrap;
-}
-
-#header
-{
-  position: fixed;
-  width: 9em;
-  margin: 0 0 0 -10em;
-}
-
-#nav
-{
-  font-weight: bold;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 #nav a
@@ -152,6 +135,21 @@ h3
   background-color: #FEFFCC;
   color: #001036;
   padding: 0.3em;
+}
+
+#main a
+{
+  color: #1F4399;
+}
+
+#main a:visited, .heart
+{
+  color: #BE2632;
+}
+
+#main a:hover
+{
+  color: #FF3343;
 }
 
 /* Ugly additional <div>-s to have multiple borders around #main's content: */
@@ -173,6 +171,23 @@ h3
   padding: 1.8ex 0.6em;
 }
 
+h2
+{
+  font-size: 240%;
+  margin: 0 0 0.7ex;
+}
+
+h3
+{
+  font-size: 190%;
+  margin: 1.7ex 0 0.7ex;
+}
+
+.subtitle
+{
+  white-space: nowrap;
+}
+
 p
 {
   margin: 0;
@@ -185,8 +200,8 @@ p + p, p + table
 
 .lede
 {
-  font-weight: normal;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 table
@@ -196,8 +211,8 @@ table
 
 th, td
 {
-  vertical-align: top;
   padding: 1ex 0.7em 0 0;
+  vertical-align: top;
 }
 
 tr:first-child > th, tr:first-child > td
@@ -222,29 +237,16 @@ img.full
   padding: 0;
 }
 
-#main a
-{
-  color: #1F4399;
-}
 
-#main a:visited, .heart
-{
-  color: #BE2632;
-}
 
-#main a:hover
+#home h1
 {
-  color: #FF3343;
+  visibility: hidden;
 }
 
 #home
 {
   background: url(big_bunting.png) repeat-x 0 5px;
-}
-
-#home h1
-{
-  visibility: hidden;
 }
 
 #home h2
