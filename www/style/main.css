@@ -193,9 +193,14 @@ p
   margin: 0;
 }
 
-p + p, p + table
+p + p
 {
   margin-top: 1.5ex;
+}
+
+p + table
+{
+  margin-top: 0.5ex;
 }
 
 .lede
@@ -213,11 +218,6 @@ th, td
 {
   padding: 1ex 0.7em 0 0;
   vertical-align: top;
-}
-
-tr:first-child > th, tr:first-child > td
-{
-  padding-top: 0;
 }
 
 th
