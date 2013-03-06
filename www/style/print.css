@@ -1,3 +1,10 @@
+/*
+** print.css
+**
+** Override main.css for printing pages. Mostly this is undoing stuff.
+*/
+
+/* No background colour or lace. Dark blue text: */
 html
 {
   background-color: inherit;
@@ -5,6 +12,8 @@ html
   color: #001036;
 }
 
+/* Don't have the bunting on <body>, because it doesn't work well with multiple
+** sheets: */
 body
 {
   background-image: none;
@@ -13,10 +22,15 @@ body
 
 #body2
 {
+
+  /* No space for lace: */
   margin-bottom: 0;
+
+  /* No space for header: */
   padding: 0;
 }
 
+/* Don't put the header down the side: */
 #header
 {
   position: inherit;
@@ -24,6 +38,7 @@ body
   margin: inherit;
 }
 
+/* No point in displaying the menu on paper: */
 #nav
 {
   display: none;
@@ -31,24 +46,42 @@ body
 
 h1
 {
+
+  /* This is now across the top of the page. Make it bigger than anything else,
+  ** so it looks like the main heading: */
   font-size: 300%;
-  background: url(little_bunting.png) repeat-x;
-  padding-top: 65px;
+
+  /* Undo the tighter leading that was used when in a square shape: */
   line-height: inherit;
+
+  /* Put the bunting here, so it appears at the top of the first page: */
+  background: url(little_bunting.png) repeat-x;
+
+  /* Space for the bunting: */
+  padding-top: 65px;
+
+  /* Not overlapping a heart, so don't need the outline: */
   text-shadow: inherit;
+
+  /* Not preceding the menu, so don't need the gap before it: */
   margin: 0;
 }
 
+/* Don't put the big heart behind it, cos that doesn't look right when across
+** the top of the page and with the bunting: */
 h1:before
 {
   content: inherit;
 }
 
+/* Still have the box around the main content, but don't have a cream
+** background on it: */
 #main
 {
   background-color: inherit;
 }
 
+/* Don't split sections across multiple sheets: */
 .section
 {
   page-break-inside: avoid;
