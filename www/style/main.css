@@ -78,8 +78,8 @@ body
   padding-right: 1em;
 }
 
-/* Script font for headings, and everything on the home page: */
-h1, h2, h3, #home #main
+/* Script font for headings, and <strong> on the home page: */
+h1, h2, h3, #home #main strong
 {
   font-family: "Alex Brush";
 
@@ -423,10 +423,9 @@ img.full
   padding: 0;
 }
 
-/* Everything on the home page is in the script font, so make important things
-** be bigger rather than bold: */
+/* <strong> on the home page is in the script font, make it an appropriate
+** size: */
 #home #main strong
 {
   font-size: 220%;
-  font-weight: normal;
 }
