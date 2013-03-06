@@ -11,6 +11,21 @@ html
   padding: 0;
 }
 
+a
+{
+  color: #91CFE6;
+}
+
+a:visited
+{
+  color: #E62A3D;
+}
+
+a:hover
+{
+  color: #A1E6FF;
+}
+
 body
 {
   background: url(little_bunting.png) repeat-x 0 5px;
@@ -70,10 +85,22 @@ h1:before
   top: -0.45ex;
 }
 
-h1 a
+#header a
 {
   color: inherit;
   text-decoration: inherit;
+}
+
+#header a:hover
+{
+  color: #FF7;
+  text-shadow: 0 0 0.5ex #FF7;
+}
+
+#nav strong
+{
+  color: #FFF;
+  text-shadow: 0 0 0.5ex #FFF;
 }
 
 #nav li > :before
@@ -118,21 +145,6 @@ h3
 #nav a
 {
   display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-#header a:hover
-{
-  color: #FF7;
-  text-shadow: 0 0 0.5ex #FF7;
-}
-
-
-#nav strong
-{
-  color: #FFF;
-  text-shadow: 0 0 0.5ex #FFF;
 }
 
 #main
@@ -252,21 +264,6 @@ img.full
 {
   border-style: none;
   padding: 0;
-}
-
-#home #main a
-{
-  color: #91CFE6;
-}
-
-#home #main a:visited
-{
-  color: #E62A3D;
-}
-
-#home #main a:hover
-{
-  color: #A1E6FF;
 }
 
 #home #main strong
