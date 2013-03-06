@@ -45,7 +45,7 @@ body
   max-width: 44em;
 }
 
-h1, h2, h3, #home #main strong
+h1, h2, h3, #home #main
 {
   font-family: "Alex Brush";
 
@@ -269,4 +269,5 @@ img.full
 #home #main strong
 {
   font-size: 220%;
+  font-weight: normal;
 }
